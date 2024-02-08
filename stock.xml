@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE stock[	
+<!ELEMENT stock (new-car|used-car)*>	
+<!ELEMENT new-car (model,price)>	
+<!ELEMENT used-car (model,price,mileage,condition?)>	
+<!ELEMENT model (#PCDATA)>	
+<!ELEMENT price (#PCDATA)>	
+<!ELEMENT mileage (#PCDATA)>	
+<!ELEMENT condition (#PCDATA)>	
+]>
+<stock>
+    <new-car>
+        <model>Toyota Camry</model>
+        <price>25000</price>
+    </new-car>
+    <used-car>
+        <model>Honda Civic</model>
+        <price>15000</price>
+        <mileage>50000</mileage>
+        <condition>Good</condition>
+    </used-car>
+    <used-car>
+        <model>Accord</model>
+        <price>10.000</price>
+        <mileage>All of Elden Ring</mileage>
+        <condition>Fluffy</condition>
+    </used-car>
+</stock>
